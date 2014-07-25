@@ -1,0 +1,206 @@
+/* openjscad.css, originally written by Joost Nieuwenhuijse
+ *    few changes made by Rene K. Mueller for OpenSCAD.org
+ */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.nomargin{
+	margin:0;
+	height:65px;
+}
+.editAndDownload{
+	height: 65px;
+	width: 100%;
+	background: rgba(255,255,255,.6);
+}
+
+a:link {
+    color: #000;
+}
+
+/* visited link */
+a:visited {
+    color: #000;
+}
+
+input {
+	padding: 13px;
+	outline: none;
+/*	position: relative;
+	top: 0px;
+*/	font-size: 25px;
+/*	height: 27px;
+*/	border: 5px solid lightgray;
+/*	right: -29px;
+*/	width: 75px;
+	text-align: center;
+	margin:0;
+
+}
+
+.logo{
+	height: 55px;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ng-scope{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.name{
+	position: relative;
+	letter-spacing: 10px;
+	display: inline-block;
+	line-height: 55px;
+	vertical-align: middle;
+	margin: 0;}
+
+.ng-isolate-scope{
+}
+
+.clickdownload{
+	display:inline-block;
+	vertical-align:middle;
+	text-transform: uppercase;
+	background: rgb(80,210,210);
+	color: white !important;
+	padding: 24px;
+	letter-spacing: 3px;
+}
+
+.clickdownload:hover{
+	background: rgb(90,220,220);
+}
+
+#filedropzone {
+  border: 2px dashed #bbb;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  padding: 15px;
+  color: black;
+  width: 100%;
+  background: #fff;
+  margin-top: 0.5em;
+}
+
+.editAndDownload #navlist li
+{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
+
+#filedropzone_empty {
+  text-align: center;
+  color: #888;
+}
+
+#filedropzone_filled {
+  color: black;
+  display: none;
+}
+
+#filebuttons {
+  /* float: right; */
+  margin-left: 2em;
+  display: inline;
+}
+
+canvas { 
+  cursor: move; 
+}
+
+#downloadOutputFileLink {
+   padding: 2px;
+   padding-left: 8px;
+   padding-right: 8px;
+   border: 1px solid black;
+	 position:relative;
+	 bottom:0;
+	 left:0;
+   border-radius: 4px;  /* css mess */
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+
+   background: #d8f;
+   background: -webkit-gradient(linear, left top, left bottom, from(#eaf), to(#c6f));
+   background: -moz-linear-gradient(top,  #eaf,  #c6f);
+
+   text-decoration: none;
+   color: black;
+   font-size: 0.9em;
+   font-weight: bold;
+   box-shadow: 0px 0px 8px black;
+}
+
+#parametersdiv {
+  /* display: inline-block;     ineffective since we do control in openjscad.js */
+  position: absolute;         
+	font-family:arial;
+  top: 1em;                /* draggable via jQuery cannot move bottom: align, stick at the bottom (bug!!) */
+  left: 1em;
+  /* top: 2em;                if draggable, but must be left/top oriented, cannot be aligned bottom which looks nicer
+     left: 16em;
+   */
+
+  z-index: 4;
+  border: 1px solid rgb(200,200,200);
+  border-radius: 5px;     
+  -moz-border-radius: 5px;    /* css mess */
+  -webkit-border-radius: 5px;
+	font-size:200%;
+  padding: 10px;
+  background: #fff; /* rgba(255,255,255,0.7); */
+  opacity: 0.8;
+  
+  /* box-shadow: 0px 0px 15px black;  no shadow, it would indicate moveable/dragable */
+  
+  /* cursor: move;     moveable now */
+}
+#parametersdiv td {
+  font-size: 0.8em;
+}
+#parametersdiv input, #parametersdiv textarea, #parametersdiv select {
+  font-size: 0.9em;
+  background: #eee;
+  border: none;
+	width:2em;
+	text-align:center;
+  border-radius: 5px;     
+  -moz-border-radius: 5px;    /* css mess */
+  -webkit-border-radius: 5px;
+	border:2px solid #000;
+}
+
+#parametersdiv .parameterheader {
+   font-weight: bold;
+   font-size: 0.9em;
+}
+
+#parametersdiv .caption {
+   text-align: right;
+}
+
+#instantUpdate {
+   margin-left: 1em;
+}
+
+#instantUpdateLabel {
+   font-size: 0.9em;
+}
+
+.statusdiv {
+}
